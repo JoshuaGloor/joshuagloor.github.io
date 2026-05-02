@@ -1,0 +1,19 @@
+# Quarto
+/.quarto/
+**/*.quarto_ipynb
+
+# Quarto build artifacts
+_site/
+.quarto/
+
+# RStudio project files
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# OS files
+.DS_Store
+
+# Editor files
+.vscode/

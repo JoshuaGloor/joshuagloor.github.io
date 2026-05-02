@@ -1,0 +1,19 @@
+project:
+  type: website
+
+website:
+  title: "joshua gloor"
+  description: "Joshua Gloor — data engineer in Singapore"
+  site-url: https://www.gloor.fyi
+  navbar:
+    right:
+      - projects.qmd
+      - about.qmd
+      - icon: github
+        href: https://github.com/JoshuaGloor
+      - icon: linkedin
+        href: https://www.linkedin.com/in/joshua-gloor/
+format:
+  html:
+    theme: cosmo
+    css: styles.css

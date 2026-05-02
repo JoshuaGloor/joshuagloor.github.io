@@ -1,0 +1,27 @@
+---
+title: "about"
+about:
+  template: solana
+  image: images/portrait-dumplings.jpg
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/JoshuaGloor
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/joshua-gloor/
+---
+
+Hi, I'm Joshua. I'm a data engineer based in Singapore, where I've been
+since finishing my undergrad at ETH Zurich in 2022. I moved here straight
+after graduating because I'd long been drawn to Southeast Asia.
+Several years in, what I've come to appreciate most is the everyday life.
+Singapore is small but has a lot to offer.
+
+I work as a data engineer at Adnovum. On the side, I'm working through a
+part-time MSc in Statistics at NUS.
+
+I write here about things I'm learning, mostly in statistics and
+computer science.
+
+You can reach me at joshua [at] gloor.fyi.
