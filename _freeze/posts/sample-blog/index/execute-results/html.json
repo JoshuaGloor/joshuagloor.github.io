@@ -1,8 +1,8 @@
 {
-  "hash": "1b2bf961c3c58879ff302959a66a98bf",
+  "hash": "f77607eef004fb6332d657b75ef2d798",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Sample Post With Code\"\nauthor: \"Joshua Gloor\"\ndate: \"2026-05-03\"\ncategories: [code, example]\n---\n\nThis is a post with executable code.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\n\np <- ggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point(color = \"steelblue\", size = 3) +\n  geom_smooth(method = \"lm\", color = \"red\", se = FALSE) +\n  labs(title = \"Fuel Efficiency vs Weight\",\n       x = \"Weight (1000 lbs)\",\n       y = \"Miles per Gallon\") +\n  theme_minimal()\n\nplot(p, width = 8, height = 6, dpi = 100)\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\n`geom_smooth()` using formula = 'y ~ x'\n```\n\n\n:::\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n",
+    "markdown": "---\ntitle: \"Sample Post With Code\"\nauthor: \"Joshua Gloor\"\ndate: \"2026-05-03\"\ncategories: [code, example]\n---\n\n# Header 1\n## Header 2\n### Header 3\n#### Header 4\n##### Header 5\n\nThis is a post with executable code.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\n\np <- ggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point(color = \"steelblue\", size = 3) +\n  geom_smooth(method = \"lm\", color = \"red\", se = FALSE) +\n  labs(title = \"Fuel Efficiency vs Weight\",\n       x = \"Weight (1000 lbs)\",\n       y = \"Miles per Gallon\") +\n  theme_minimal()\n\nplot(p, width = 8, height = 6, dpi = 100)\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\n`geom_smooth()` using formula = 'y ~ x'\n```\n\n\n:::\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n",
     "supporting": [
       "index_files"
     ],

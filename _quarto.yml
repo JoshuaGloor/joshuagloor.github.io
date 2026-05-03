@@ -7,6 +7,8 @@ website:
   site-url: https://www.gloor.fyi
   navbar:
     right:
+      - text: "blog"
+        href: index.qmd
       - projects.qmd
       - about.qmd
       - icon: github
@@ -15,5 +17,8 @@ website:
         href: https://www.linkedin.com/in/joshua-gloor/
 format:
   html:
-    theme: cosmo
+    theme: [cosmo, theme.scss]
     css: styles.css
+    highlight-style: solarized
+    mainfont: "STIX Two Text"
+    monofont: "JetBrains Mono"

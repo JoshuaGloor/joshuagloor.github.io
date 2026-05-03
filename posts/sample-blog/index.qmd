@@ -5,6 +5,12 @@ date: "2026-05-03"
 categories: [code, example]
 ---
 
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+
 This is a post with executable code.
 
 ```{r}

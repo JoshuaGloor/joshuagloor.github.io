@@ -1,0 +1,199 @@
+/*-- scss:defaults --*/
+
+// ---------------------------------------------------------
+// Font imports (Bunny Fonts — privacy-friendly Google Fonts mirror)
+// ---------------------------------------------------------
+@import url('https://fonts.bunny.net/css?family=stix-two-text:400,400i,500,500i,700,700i|jetbrains-mono:400,400i,700,700i&display=swap');
+
+// ---------------------------------------------------------
+// Solarized light palette
+// ---------------------------------------------------------
+$sol-base3:   #fdf6e3;  // background (lightest)
+$sol-base2:   #eee8d5;  // subtle highlights, code bg
+$sol-base1:   #93a1a1;  // muted text
+$sol-base0:   #839496;  // secondary text
+$sol-base00:  #657b83;  // body text
+$sol-base01:  #586e75;  // emphasized text / headings
+$sol-base02:  #073642;
+$sol-base03:  #002b36;
+
+$sol-yellow:  #b58900;
+$sol-orange:  #cb4b16;
+$sol-red:     #dc322f;
+$sol-magenta: #d33682;
+$sol-violet:  #6c71c4;
+$sol-blue:    #268bd2;
+$sol-cyan:    #2aa198;
+$sol-green:   #859900;
+
+// ---------------------------------------------------------
+// Typography
+// ---------------------------------------------------------
+$font-family-sans-serif: "STIX Two Text", Georgia, "Times New Roman", serif;
+$font-family-monospace:  "JetBrains Mono", "Menlo", "Consolas", monospace;
+
+$font-size-base:  1.0625rem;   // ~17px, slightly bumped for STIX readability
+$line-height-base: 1.65;
+
+$headings-font-weight: 600;
+$headings-line-height: 1.25;
+
+// ---------------------------------------------------------
+// Colors
+// ---------------------------------------------------------
+$body-bg:        $sol-base3;
+$body-color:     $sol-base00;
+$headings-color: $sol-base01;
+
+$link-color:        $sol-blue;
+$link-hover-color:  darken($sol-blue, 10%);
+$link-decoration:   none;
+$link-hover-decoration: underline;
+
+// Code
+$code-color:     $sol-base01;
+$code-bg:        $sol-base2;
+$pre-bg:         $sol-base2;
+$pre-color:      $sol-base01;
+
+// Borders & rules
+$border-color:   $sol-base2;
+$hr-color:       $sol-base1;
+
+// Navbar
+$navbar-bg:                 $sol-base2;
+$navbar-light-color:        $sol-base01;
+$navbar-light-hover-color:  $sol-blue;
+$navbar-light-active-color: $sol-blue;
+$navbar-light-brand-color:  $sol-base01;
+$navbar-light-brand-hover-color: $sol-blue;
+
+// Tables
+$table-color:           $sol-base00;
+$table-border-color:    $sol-base2;
+$table-striped-bg:      rgba($sol-base2, 0.4);
+
+// Blockquotes
+$blockquote-border-color: $sol-base1;
+
+
+/*-- scss:rules --*/
+
+// ---------------------------------------------------------
+// Body & overall feel
+// ---------------------------------------------------------
+body {
+  font-feature-settings: "kern", "liga", "calt";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ---------------------------------------------------------
+// Headings — slightly more academic feel
+// ---------------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.005em;
+}
+
+h1 { font-weight: 700; }
+h2 { font-weight: 600; margin-top: 2em; }
+h3 { font-weight: 600; margin-top: 1.6em; }
+
+// ---------------------------------------------------------
+// Inline code
+// ---------------------------------------------------------
+code:not(pre code) {
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+// ---------------------------------------------------------
+// Code blocks
+// ---------------------------------------------------------
+pre {
+  padding: 0.9em 1em;
+  border-radius: 4px;
+  border: 1px solid $sol-base1;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+// ---------------------------------------------------------
+// Blockquotes — academic-paper style
+// ---------------------------------------------------------
+blockquote {
+  border-left: 3px solid $sol-base1;
+  padding-left: 1em;
+  margin-left: 0;
+  font-style: italic;
+  color: $sol-base01;
+}
+
+// ---------------------------------------------------------
+// Horizontal rules
+// ---------------------------------------------------------
+hr {
+  border: none;
+  border-top: 1px solid $sol-base2;
+  margin: 2em 0;
+}
+
+// ---------------------------------------------------------
+// Navbar polish
+// ---------------------------------------------------------
+.navbar {
+  border-bottom: 1px solid $sol-base1;
+}
+
+.navbar-title,
+.navbar-brand {
+  font-weight: 500;
+}
+
+// ---------------------------------------------------------
+// Listing page (the homepage with blog posts)
+// ---------------------------------------------------------
+.quarto-listing {
+  .listing-title {
+    font-weight: 600;
+  }
+  .listing-date,
+  .listing-categories {
+    color: $sol-base1;
+    font-size: 0.9em;
+  }
+}
+
+// Category badges
+.quarto-listing-category .category {
+  background-color: $sol-base2;
+  color: $sol-base01;
+  border: none;
+}
+
+// ---------------------------------------------------------
+// Tables — academic-paper feel
+// ---------------------------------------------------------
+table {
+  border-collapse: collapse;
+
+  th {
+    border-bottom: 2px solid $sol-base1;
+    border-top: 2px solid $sol-base1;
+    font-weight: 600;
+    color: $sol-base01;
+  }
+
+  td {
+    border-top: 1px solid $sol-base2;
+  }
+}
+
+// ---------------------------------------------------------
+// Selection (highlight color when you select text)
+// ---------------------------------------------------------
+::selection {
+  background-color: rgba($sol-yellow, 0.3);
+}
