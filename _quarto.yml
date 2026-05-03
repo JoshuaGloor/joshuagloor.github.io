@@ -21,4 +21,4 @@ format:
     css: styles.css
     highlight-style: solarized
     mainfont: "STIX Two Text"
-    monofont: "JetBrains Mono"
+    monofont: "Source Code Pro"

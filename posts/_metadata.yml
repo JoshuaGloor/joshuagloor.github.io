@@ -2,6 +2,7 @@
 
 author: "Joshua Gloor"
 date-modified: last-modified   # auto-show last edit time on each post
+fig-format: svg
 
 # freeze computational output
 # (see https://quarto.org/docs/projects/code-execution.html#freeze)

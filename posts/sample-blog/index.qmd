@@ -3,17 +3,26 @@ title: "Sample Post With Code"
 author: "Joshua Gloor"
 date: "2026-05-03"
 categories: [code, example]
+toc: true
+toc-title: "Table of Contents"
+code-fold: true
 ---
 
-# Header 1
 ## Header 2
 ### Header 3
-#### Header 4
-##### Header 5
 
-This is a post with executable code.
+This is a [hyperlink](https://www.gloor.fyi).
+
+Inline code `r 2 + 2`.
+
+$$
+(\hat{\boldsymbol{\rho}}, \hat{\nu}) = \arg\max_{\boldsymbol{\rho} \in \mathcal{P}_d,\ \nu > 2} \sum_{i=1}^{n} \left[ \log \Gamma\!\left(\tfrac{\nu+d}{2}\right) + (d-1)\log\Gamma\!\left(\tfrac{\nu}{2}\right) - d\log\Gamma\!\left(\tfrac{\nu+1}{2}\right) - \tfrac{1}{2}\log\lvert\boldsymbol{\rho}\rvert - \tfrac{\nu+d}{2}\log\!\left(1 + \tfrac{\mathbf{q}_i^{\top}\boldsymbol{\rho}^{-1}\mathbf{q}_i}{\nu}\right) + \sum_{j=1}^{d}\tfrac{\nu+1}{2}\log\!\left(1 + \tfrac{q_{ij}^2}{\nu}\right) \right]
+$$
+
+where $\mathbf{q}_i = \left(t_\nu^{-1}(u_{i1}), \ldots, t_\nu^{-1}(u_{id})\right)^{\top}$, $t_\nu^{-1}$ is the inverse univariate Student-$t$ CDF with $\nu$ degrees of freedom, $\boldsymbol{\rho}$ is the $d \times d$ correlation matrix in the positive-definite cone $\mathcal{P}_d$, and $\Gamma(\cdot)$ is the gamma function.
 
 ```{r}
+#| code-summary: "Show plotting code"
 library(ggplot2)
 
 p <- ggplot(mtcars, aes(x = wt, y = mpg)) +
@@ -24,5 +33,5 @@ p <- ggplot(mtcars, aes(x = wt, y = mpg)) +
        y = "Miles per Gallon") +
   theme_minimal()
 
-plot(p, width = 8, height = 6, dpi = 100)
+p
 ```
