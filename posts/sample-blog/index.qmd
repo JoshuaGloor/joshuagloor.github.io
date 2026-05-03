@@ -1,0 +1,22 @@
+---
+title: "Sample Post With Code"
+author: "Joshua Gloor"
+date: "2026-05-03"
+categories: [code, example]
+---
+
+This is a post with executable code.
+
+```{r}
+library(ggplot2)
+
+p <- ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point(color = "steelblue", size = 3) +
+  geom_smooth(method = "lm", color = "red", se = FALSE) +
+  labs(title = "Fuel Efficiency vs Weight",
+       x = "Weight (1000 lbs)",
+       y = "Miles per Gallon") +
+  theme_minimal()
+
+plot(p, width = 8, height = 6, dpi = 100)
+```
