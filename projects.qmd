@@ -2,4 +2,22 @@
 title: "projects"
 ---
 
-Coming soon.
+Things I've built or written. More to come.
+
+## Git in Action
+
+A hands-on reference guide to Git, written in 2024 while teaching a
+series of sessions to interns. Rather than rehashing the usual
+high-level workflow tutorials, it works from the inside out: inspecting
+the object store directly, taking apart what HEAD, the index, and the
+working tree actually are, and building up commands like `rebase` from
+their manual-page parameters instead of just memorizing what to type.
+
+Every concept is shown through real terminal sessions, numbered and
+reproducible, so you can follow along command by command and see
+exactly what Git does at each step. It covers the file-status lifecycle,
+commit and tree objects, remotes and refspecs, the full range of rebase
+scenarios (basic, onto, interactive, history rewriting), `filter-repo`,
+and data recovery with `reflog` and `fsck`. 70+ pages.
+
+[Read the guide (PDF)](projects/Git-in-Action.pdf)

@@ -11,3 +11,9 @@ listing:
 page-layout: full
 title-block-banner: false
 ---
+
+Welcome. I'm planning to write here about statistics and computer
+science. First posts coming soon.
+
+In the meantime, you might like the [projects](projects.qmd) page or
+[about](about.qmd).
