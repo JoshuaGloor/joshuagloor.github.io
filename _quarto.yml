@@ -20,7 +20,6 @@ website:
 format:
   html:
     theme: [cosmo, theme.scss]
-    css: styles.css
     highlight-style: solarized
     mainfont: "STIX Two Text"
     monofont: "Source Code Pro"

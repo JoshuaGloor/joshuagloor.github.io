@@ -1,3 +1,6 @@
+# Drafts
+drafts/
+
 # Quarto
 /.quarto/
 **/*.quarto_ipynb
